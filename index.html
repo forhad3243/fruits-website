@@ -1,35 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-      <!-- css framework  -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css framework  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- custom tailwind -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: '#da373d',
-            
-          }
-        }
-      }
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- custom css -->
+    <style>
+        .font-lato{
+        font-family: 'Lato', sans-serif;
     }
-  </script>
+    </style>
 
-  <title>Document</title>
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <title>Document</title>
 </head>
-<body>
-    
+
+<body class="font-lato">
+   <header>
+    <nav>
+
+    </nav>
+    <!-- banner section -->
+    <div class="container relative  mx-auto px-48 ">
+        <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="">
+                    <h1 class="mb-5 text-7xl  font-bold">Exotic tastes at your <br>doorstep</h1>
+                    <p class="mb-5">We supply highly quality organic products</p>
+                    <button class="btn  rounded-lg bg-[#F85559]">Shop Now</button>
+                </div>
+            </div> 
+        </div>
+        <div class="flex gap-8 py-8 px-12 items-center rounded-xl justify-center  bg-white absolute  ml-44 -mt-24 shadow-2xl">
+                <div>
+                    <img src="images/fruit1.png" class="w-28  h-28 " alt="">
+                    <p class="text-center font-medium text-xl">Grape</p>
+                </div>
+                <div>
+                    <img src="images/fruit2.png"  class="w-28 h-28 "  alt="">
+                    <p class="text-center font-medium text-xl">Orange</p>
+                </div>
+                <div>
+                    <img src="images/fruit3.png"  class="w-28 h-28  "  alt="">
+                    <p class="text-center font-medium text-xl">Mango</p>
+                </div>
+                <div>
+                    <img src="images/fruit4.png"  class="w-28  h-28 "  alt="">
+                    <p class="text-center font-medium text-xl">Strawberry</p>
+                </div>
+                <div>
+                    <img src="images/fruit5.png"  class="w-28 h-28 "  alt="">
+                    <p class="text-center font-medium text-xl">Mango</p>
+                </div>
+        </div>
+    </div>
+   </header>
+
+   <!-- main section started -->
+
+   <main class="mt-44 container mx-auto px-48">
+    <!-- deal of the section -->
+    <section>
+        <!-- coundown section -->
+        <div class="flex justify-between items-center">
+            <!-- text -->
+            <div class="space-y-5">
+                <h3 class="text-5xl font-extrabold ">Deal of the day</h3>
+                <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>
+                     Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <!-- coundown -->
+            <div>
+                <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:15;"></span>
+                      </span>
+                      days
+                    </div>
+                    <span class="text-5xl -mt-1">:</span> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:10;"></span>
+                      </span>
+                      hours
+                    </div> 
+                    <span class="text-5xl -mt-1">:</span>
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:24;"></span>
+                      </span>
+                      min
+                    </div>
+                    <span class="text-5xl -mt-1">:</span> 
+                    <div class="flex flex-col">
+                      <span class="countdown font-mono text-5xl">
+                        <span style="--value:25;"></span>
+                      </span>
+                      sec
+                    </div>
+                  </div>
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+   </main>
+
+
+
+
+
+
 </body>
+
 </html>
 
